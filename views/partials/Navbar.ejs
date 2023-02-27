@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <nav id="myDiv" class="main">
+            <div class="logo">
+                AliveWithPlant
+            </div>
+
+            <div class="nav-links">
+                <div class="nav-quick">
+                    <a href="/" <% if(pagename ==="home" ) {%>
+                        class=" active"
+                        <%} else {%>
+                            class="nav-btn"
+                            <%}%>>Home</a>
+
+                    <a href="/about-us" <% if(pagename ==="about" ) {%>
+                        class=" active"
+                        <%} else {%>
+                            class="nav-btn"
+                            <%}%>
+                            >About Us</a>
+
+                    <a href="/contact-us" <% if(pagename ==="contact" ) {%>
+                        class=" active"
+                        <%} else {%>
+                            class="nav-btn"
+                            <%}%>
+                                >Contact Us
+                    </a>
+                </div>
+                <div class="nav-gallery">
+                    <a href="#" class=" gallery">Gallery</a>
+                    <a href="#" class=" gallery">Suggestions</a>
+                </div>
+            </div>
+        </nav>
+
+
+
+    </header>
+
+    <!-- <script src="/scripts/navbar.js"></script> -->
+
+</body>
+
+</html>

@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@200;300;400;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-green: rgb(98, 175, 47);
+    --primary-orange: rgb(198, 153, 24);
+    --primary-red: rgb(211, 33, 37);
+    --primary-white: white;
+    --primary-black: black;
+}
+
+.main {
+    width: 90%;
+    margin: 0 auto;
+
+}
+header{
+    width: 100%;
+    /* background: linear-gradient(to right, white 0%, white 40%, rgb(98, 175, 47) 0%, rgb(98, 175, 47) 60%);*/
+    border-bottom:2px solid rgb(215, 206, 206) ; 
+}
+
+nav {
+    /* width: 95%; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 0;
+    font-family: 'Sora', sans-serif;
+
+}
+
+nav .logo {
+    width: 30%;
+}
+
+nav .nav-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+    /* padding: 0.75rem 0; */
+}
+
+nav .nav-quick {
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav .nav-gallery {
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+}
+nav .nav-gallery .gallery{
+    padding: 8px 6px;
+    background-color: var(--primary-green);
+    color: white;
+    border-radius: 5px ;
+    font-weight: 400;
+}
+nav .nav-gallery .gallery:hover, nav .nav-gallery .gallery:focus, nav .nav-gallery .gallery:active{
+    color: rgb(213, 197, 197);
+    transition: color 0.2s ease-in-out;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--primary-green);
+    font-weight: bold;
+    
+}
+.active,
+.nav-btn:hover, .nav-btn:active {
+    /* background-color: var(--color-section2); */
+    color: rgb(213, 197, 197);
+    transition: color 0.2s ease-in-out;
+    border-bottom: 2px solid  var(--primary-green);
+}
