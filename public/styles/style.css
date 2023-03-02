@@ -222,7 +222,7 @@ nav a {
 .section-home{
     width: 100%;
     height: 90vh;
-    background: url("/imgs/img-bg.png") no-repeat center center fixed;
+    background: url("/imgs/img-bg.png") no-repeat center center;
     background-size: cover; 
     position: relative; 
     
@@ -263,4 +263,138 @@ nav a {
     color: var(--primary-white);
     font-weight: bold;
     margin-top: 10px;
+}
+
+/* SECTION 2 */
+.section2{
+    /* height: 50vh; */
+    display: flex;
+    gap: 15px;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+
+}
+.section2-1{
+   width: 80%;
+   padding: 2rem;
+   background-color: #d2e4c7;
+   display: flex;
+   align-items: center;
+}
+.section2-2{
+   width: 80%;
+   padding: 2rem;
+   background-color: #f0e39f;
+   display: flex;
+   align-items: center;
+}
+.section2-1 .section2-1text{
+    border: 3px solid white;
+    padding: 2rem 1rem;
+    /* display: flex;
+    flex-direction: column; */
+    position: relative;
+}
+.section2-1 .section2-1text div{
+    width: 40%;
+}
+.section2-1 .section2-1text div h4{
+    font-size: 1rem;
+}
+.section2-1 .section2-1text div p{
+    font-size: 0.85rem;
+}
+.section2-1 .section2-1text div .btn{
+    background-color: #b0be20;
+    width: 25%;
+    color: white;
+    padding:0.5rem 1.5rem;
+    border: 3px solid white;
+    border-radius: 15px;
+    text-decoration: none;
+    font-size: 0.75rem;
+    position: absolute;
+    left: 5%;
+    top: 92%;
+}
+.section2-1 .section2-2text div .btn{
+    background-color: #edd04e;
+   
+}
+.section2-1 .section2-1text .section2-1img img{
+    width: 80%;
+    position: absolute;
+    top: 19%;
+    right: -11%;
+    z-index: 10;
+}
+.section2-1 .section2-1text .section2-2img img{
+    width: 85%;
+    position: absolute;
+    top: 15%;
+    right: -18%;
+    z-index: 10;
+}
+
+/* SECTION 3 */
+.section3{
+    width: 100%;
+    height: 100vh;
+    background: radial-gradient(circle, rgba(100,159,35,1) 35%, rgba(35,124,56,1) 99%);
+    padding-bottom: 3rem ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.section3 .one img{
+    position: absolute;
+    top: -16%;
+    left: 0;
+    width: 10%;
+}
+.section3 .two img{
+    position: absolute;
+    top: -14%;
+    right: 0;
+    width: 15%;
+}
+.section3 .section3-text{
+    /* border: 1px solid red; */
+    width: 50%;
+    color: white;
+    padding: 1rem 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.section3 .section3-text h3{
+    text-transform: uppercase;
+    text-align: center;
+}
+.section3 .section3-text p{
+    font-size: 0.95rem;
+    text-align: center;
+}
+.section3 .section3-text div{
+    display: flex;
+    justify-content: center;
+}
+.section3 .section3-text .btn{
+    font-size: 0.95rem;
+    background-color: var(--primary-green);
+    width: 25%;
+    color: white;
+    padding:0.5rem 1.5rem;
+    border: 3px solid white;
+    border-radius: 15px;
+    text-decoration: none;
+    text-align: center;
+    
+}
+.section3 .img img{
+    width: 30%;
+    position: absolute;
+    left: 35%;
+    top: 63%;
 }
