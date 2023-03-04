@@ -1,7 +1,11 @@
 const express = require("express");
 const app = express();
 const port = 3500;
-
+const HomePage = require("./routes/home")
+const ContactUs = require("./routes/contact")
+const AboutUs = require("./routes/about")
+const Gallery = require("./routes/gallery")
+const Suggestions = require("./routes/suggestions")
 
 const livereload = require("livereload");
 const connectLiveReload = require("connect-livereload");
@@ -18,18 +22,11 @@ app.use(express.static("public"));
 app.use("/public/imgs", express.static("./public/imgs"));
 app.use(connectLiveReload());
 
-
-app.get("/", (req, res) => {
-  res.render("home", { pagename: "home" });
-});
-
-app.get("/about-us", (req, res) => {
-  res.render("about", {pagename: "about"});
-});
-
-app.get("/contact-us", (req, res) => {
-  res.render("contact", {pagename: "contact"});
-});
+app.use(HomePage)
+app.use(ContactUs)
+app.use(AboutUs)
+app.use(Gallery)
+app.use(Suggestions)
 
 app.listen(port, () => {
   console.log(`listening on ${port}`);

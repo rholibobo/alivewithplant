@@ -601,6 +601,7 @@ footer {
     display: flex;
     /* align-items: center; */
     justify-content: center;
+    font-family: 'Open Sans', sans-serif;
 }
 
 footer:before {
@@ -620,16 +621,15 @@ footer .footer-div {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* background-color: red; */
+    gap: 10px;
     z-index: 21;
 
-
-    /* margin: 0 auto; */
-
 }
-
+footer .footer-div #q-links{
+    width: 20%;
+}
 footer .footer-div .contact {
-    width: 30%;
+    width: 35%;
     background-color: white;
     display: flex;
     flex-direction: column;
@@ -637,12 +637,23 @@ footer .footer-div .contact {
     z-index: 20;
     box-shadow: 9px 10px 23px -4px rgba(0, 0, 0, 0.75);
 }
+footer .footer-div .contact ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+footer .footer-div .contact ul a{
+    color: grey;
+    text-decoration: none;
+}
 
 footer .footer-div .contact h3 {
     /* text-align: center; */
-    padding-left: 20px;
-    text-transform: uppercase;
-    font-size: 1.5rem;
+    padding-left: 10px;
+    text-transform: capitalize;
+    font-size: 1rem;
+    color: var(--primary-green);
 
 }
 
@@ -678,7 +689,7 @@ footer .footer-div .contact .socials i {
 }
 
 footer .footer-div .suggestions {
-    width: 60%;
+    width: 55%;
     background-color: white;
     z-index: 20;
     display: flex;
@@ -693,9 +704,10 @@ footer .footer-div .suggestions form {
     padding:1rem 1.5rem 2rem 1.5rem;
 }
 footer .footer-div .suggestions form h3{
-    padding-left: 20px;
-    text-transform: uppercase;
-    font-size: 1.5rem;
+    padding-left: 10px;
+    text-transform: capitalize;
+    font-size: 1rem;
+    color: var(--primary-green);
 }
 
 input {
