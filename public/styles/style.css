@@ -8,13 +8,46 @@
 }
 
 :root {
-    --primary-green: rgb(98, 175, 47);
+    --primary-green: #62af2f;
     --primary-orange: rgb(198, 153, 24);
     --primary-red: rgb(211, 33, 37);
     --primary-white: white;
     --primary-black: black;
 }
 
+/* WEBSITE LOADER */
+.inline {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    
+}
+#spinner {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: spin 3s linear infinite;
+    color: #62af2f;
+    
+}
+
+@keyframes spin {
+    100% {
+        /* transform: rotate(360deg); */
+        transform: scale(1.2);
+    }
+}
+
+.spinner img {
+    width: 20%;
+}
+
+
+/* MAIN BODY */
 main {
     font-family: 'Open Sans', sans-serif;
 }
@@ -625,25 +658,28 @@ footer .footer-div {
     z-index: 21;
 
 }
-footer .footer-div #q-links{
+
+footer .footer-div #q-links {
     width: 20%;
 }
+
 footer .footer-div .contact {
     width: 35%;
     background-color: white;
     display: flex;
     flex-direction: column;
-    padding:2rem 1rem 2rem 1.75rem;
+    padding: 2rem 1rem 2rem 1.75rem;
     z-index: 20;
     box-shadow: 9px 10px 23px -4px rgba(0, 0, 0, 0.75);
 }
-footer .footer-div .contact ul{
+
+footer .footer-div .contact ul {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-footer .footer-div .contact ul a{
+footer .footer-div .contact ul a {
     color: grey;
     text-decoration: none;
 }
@@ -701,9 +737,10 @@ footer .footer-div .suggestions form {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    padding:1rem 1.5rem 2rem 1.5rem;
+    padding: 1rem 1.5rem 2rem 1.5rem;
 }
-footer .footer-div .suggestions form h3{
+
+footer .footer-div .suggestions form h3 {
     padding-left: 10px;
     text-transform: capitalize;
     font-size: 1rem;
@@ -737,7 +774,8 @@ footer .footer-div .suggestions .top {
     gap: 20px;
 
 }
-footer .footer-div .suggestions button{
+
+footer .footer-div .suggestions button {
     width: 50%;
     background-color: var(--primary-green);
     padding: 0.75rem 1.75rem;
