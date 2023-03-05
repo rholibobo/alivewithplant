@@ -1,0 +1,60 @@
+.contact {
+    width: 50%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 1rem 2rem 1.75rem;
+    z-index: 20;
+    box-shadow: 9px 10px 23px -4px rgba(0, 0, 0, 0.75);
+}
+
+.contact ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact ul a {
+    color: grey;
+    text-decoration: none;
+}
+
+.contact h3 {
+    /* text-align: center; */
+    padding-left: 10px;
+    text-transform: capitalize;
+    font-size: 3rem;
+    color: var(--primary-green);
+
+}
+
+.contact .icons {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    color: grey;
+}
+
+.contact .icons i {
+    color: gold;
+    font-size: 1.5rem;
+
+}
+
+.contact .icons div span {
+    font-size: 1rem;
+}
+
+.contact .socials {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact .socials i {
+    background-color: grey;
+    padding: 0.5rem;
+    border-radius: 50%;
+    color: white;
+}
