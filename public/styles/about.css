@@ -21,7 +21,7 @@ main {
     display: flex;
     flex-direction: column;
     gap: 15px;
-    position: absolute;
+    /* position: absolute; */
     z-index: 10;
     box-shadow: 6px 7px 20px -1px rgba(19,17,17,0.75);
 }
