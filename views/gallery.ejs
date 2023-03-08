@@ -1,21 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="/styles/style.css">
-</head>
-<body>
-    <%- include('partials/Loader.ejs') %>
-    <%- include('partials/Navbar.ejs') %>
+    <link rel="stylesheet" href="/styles/style.css" />
+    <link rel="stylesheet" href="/styles/gallery.css" />
+  </head>
+
+  <body>
+    <%- include('partials/Loader.ejs') %> <%- include('partials/Navbar.ejs') %>
     <main>
-        <section>
-            <h1>Gallery</h1>
-        </section>
-        
+      <section class="gallery-section main">
+        <div class="gallery-container">
+          <div class="container">
+            <div class="main-display">
+              <div class="img-display display1"></div>
+              <div class="below-img">
+                <p>Lorem, ipsum.</p>
+                <button class="btnGallery">Click to view Recipee</button>
+              </div>
+            </div>
+            <div class="recipee-display">
+              <h3>Lorem ipsum dolor sit.</h3>
+              <ul>
+                <li>Lorem ipsum dolor sit.</li>
+                <li>Lorem ipsum dolor sit.</li>
+                <li>Lorem ipsum dolor sit.</li>
+                <li>Lorem ipsum dolor sit.</li>
+                <li>Lorem ipsum dolor sit.</li>
+              </ul>
+              <div class="below">
+                <p>Lorem, ipsum.</p>
+                <button class="btnBelow">Back</button>
+              </div>
+              <!-- <div class="back-btn">
+                <button>Back</button>
+              </div> -->
+            </div>
+          </div>
+          <div class="container">
+            <div class="main-display">
+              <div class="img-display display2"></div>
+              <div class="below-img">
+                <p>Lorem, ipsum.</p>
+                <button class="btnGallery">Click to view Recipee</button>
+              </div>
+            </div>
+            <div class="recipee-display">
+              <h3>Lorem ipsum dolor sit.</h3>
+              <ul>
+                <li>Lorem ipsum dolor sit.</li>
+                <li>Lorem ipsum dolor sit.</li>
+                <li>Lorem ipsum dolor sit.</li>
+                <li>Lorem ipsum dolor sit.</li>
+                <li>Lorem ipsum dolor sit.</li>
+              </ul>
+              <div class="below">
+                <p>Lorem, ipsum.</p>
+                <button class="btnBelow">Back</button>
+              </div>
+              <!-- <div class="back-btn">
+                <button>Back</button>
+              </div> -->
+            </div>
+          </div>
+          <div class="container">
+            <div class="main-display">
+              <div class="img-display display3"></div>
+              <div class="below-img">
+                <p>Lorem, ipsum.</p>
+                <button class="btnGallery">Click to view Recipee</button>
+              </div>
+            </div>
+            <div class="recipee-display">
+              <h3>Lorem ipsum dolor sit.</h3>
+              <ul>
+                <li>Lorem ipsum dolor sit.</li>
+                <li>Lorem ipsum dolor sit.</li>
+                <li>Lorem ipsum dolor sit.</li>
+                <li>Lorem ipsum dolor sit.</li>
+                <li>Lorem ipsum dolor sit.</li>
+              </ul>
+              <div class="below">
+                <p>Lorem, ipsum.</p>
+                <button class="btnBelow">Back</button>
+              </div>
+              <!-- <div class="back-btn">
+                <button>Back</button>
+              </div> -->
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-    <%- include('partials/Footer.ejs') %> 
-</body>
+    <%- include('partials/Footer.ejs') %>
+    <!-- <script src="../public/scripts/gallery.js"></script> -->
+    <script>
+      const box = document.getElementsByClassName("container");
+      const boxText = document.getElementsByClassName("main-display");
+      const boxText2 = document.getElementsByClassName("recipee-display");
+      const button = document.getElementsByClassName("btnGallery");
+      const buttonBelow = document.getElementsByClassName("btnBelow");
+      
+
+      for (
+        let i = 0;
+        i < boxText.length &&
+        i < boxText.length &&
+        i < button.length &&
+        i < buttonBelow.length &&
+        i < box.length;
+        i++
+      ) {
+        button[i].addEventListener("click", turnFlip);
+        function turnFlip() { 
+            box[i].classList.add("flip");
+            boxText[i].style.display = "none";
+            boxText2[i].style.display = "block";
+            button[i].innerText = "Back";
+          
+        }
+        buttonBelow[i].addEventListener('click', ()=>{
+          box[i].classList.remove("flip");
+            boxText[i].style.display = "block";
+            boxText2[i].style.display = "none";
+            button[i].innerText = "Click to view Recipee";
+        })
+      }
+    </script>
+  </body>
 </html>
