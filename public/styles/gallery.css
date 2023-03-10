@@ -227,9 +227,9 @@ li{
 }
 
 .video-gallery{
-    display: flex;
+    display: none;
     justify-content: space-between;
-    padding-bottom: 3rem;
+    padding: 3rem 0;
 }
 .video-div{
     width: 30%;
@@ -308,5 +308,29 @@ li{
     background-color: var(--primary-green); 
     cursor: pointer;
     border-radius: 5px;
+}
+#photos-btn.do{
+    background-color: white;
+    color: var(--primary-green);
+    animation: mover 1s ease-in-out infinite;
+}
+@keyframes mover {
+    100%{
+        background-color: white;
+        color: var(--primary-green);
+        transform: translateX(50%);
+    }
+}
+#videos-btn.done{
+    background-color: white;
+    color: var(--primary-green);
+    animation: move 1s ease-in-out infinite;
+}
+@keyframes move {
+    100%{
+        background-color: white;
+        color: var(--primary-green);
+        transform: translate(-50%);
+    }
 }
 
