@@ -12,17 +12,18 @@
     position: relative;
 }
 #btn-above{
-    width: 60%;
-    margin: 0 auto;
+    width: 40%;
+    margin: 2rem auto;
     display: flex;
     justify-content: space-between;
     box-shadow: 3px 4px 9px 1px rgba(0, 0, 0, 0.28);
     /* position: absolute; */
     z-index: 40; 
+    
 
 }
 .gallery-section #btn-above #photos-btn,#videos-btn{
-    width: 20%;
+    /* width: 20%; */
     padding: 0.75em 1.75em;
     background-color: var(--primary-green);
     border:2px solid var(--primary-green) ;
@@ -36,12 +37,12 @@
     
 } */
 .gallery-container{
-    padding-top: 1rem;
+    /* margin-top: 3rem; */
     display: flex;
     gap: 20px;
-    align-items: center;
+    /* align-items: center; */
     justify-content: space-between;
-    padding-bottom: 3rem;
+    padding: 1.5rem 0;
 }
 .container{
     width: 100%;
@@ -229,7 +230,8 @@ li{
 .video-gallery{
     display: none;
     justify-content: space-between;
-    padding: 3rem 0;
+    padding: 1.5rem 0;
+    /* margin-top: 3rem; */
 }
 .video-div{
     width: 30%;
@@ -309,6 +311,23 @@ li{
     cursor: pointer;
     border-radius: 5px;
 }
+
+/* ONLOAD PHOTOS GALLERY ANIMATION */
+#photos-btn{
+    background-color: white;
+    color: var(--primary-green);
+    animation: shift 1s ease-in-out infinite;
+}
+@keyframes shift {
+    100%{
+        background-color: white;
+        color: var(--primary-green);
+        transform: translateX(50%);
+        
+    }
+}
+
+/* ONCLICK ANIMATIONS */
 #photos-btn.do{
     background-color: white;
     color: var(--primary-green);
@@ -331,6 +350,30 @@ li{
         background-color: white;
         color: var(--primary-green);
         transform: translate(-50%);
+    }
+}
+
+/* ANIMATION SWITCH FOR SWITCH BETWEEN VIDEO AND PHOTOS */
+#pix.flip{
+    display: flex;
+    flex-direction: column;
+    animation: flip 0.3s ease-in-out; 
+}
+@keyframes flip {
+   
+    100%{
+        transform: rotateY(360deg); 
+    }
+}
+#vids.flip{
+    display: flex;
+    flex-direction: column;
+    animation: flip 0.3s ease-in-out; 
+}
+@keyframes flip {
+   
+    100%{
+        transform: rotateY(360deg); 
     }
 }
 
