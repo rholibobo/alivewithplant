@@ -1,0 +1,21 @@
+:root {
+    --primary-green: #62af2f;
+    --primary-orange: rgb(198, 153, 24);
+    --primary-red: rgb(211, 33, 37);
+    --primary-white: white;
+    --primary-black: black;
+    --primary-body: #f1f1ef;
+    --shadow:3px 4px 9px 1px rgba(0, 0, 0, 0.28);
+}
+
+.suggestions-container{
+    width: 85%;
+    margin: 0 auto;
+    padding-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+.suggestions-div1{
+    width: 30%;
+    border: 1px solid red;
+}

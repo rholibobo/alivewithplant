@@ -739,7 +739,7 @@ footer .footer-div .contact .socials i {
     color: white;
 }
 
-footer .footer-div form {
+form {
     width: 55%;
     background-color: rgba(255, 255, 255, 0.9);
     z-index: 20;
@@ -750,17 +750,7 @@ footer .footer-div form {
     padding: 2rem 1rem 2rem 1.75rem;
     box-shadow: 9px 10px 23px -4px rgba(0, 0, 0, 0.75);
 }
-
-/* footer .footer-div form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    
-    
-    
-} */
-
-footer .footer-div form h3 {
+form h3 {
     padding-left: 10px;
     padding-bottom: 10px;
     text-transform: capitalize;
@@ -776,9 +766,7 @@ input {
     background-color: white;
 
 }
-/* input::placeholder, textarea::placeholder{
-    color: black;
-} */
+
 
 textarea {
     width: 100%;
@@ -792,14 +780,14 @@ textarea {
 
 }
 
-footer .footer-div .top {
+form .top {
     display: flex;
     justify-content: space-between;
     gap: 20px;
 
 }
 
-footer .footer-div button {
+form button {
     width: 50%;
     background-color: var(--primary-green);
     padding: 0.75rem 1.75rem;

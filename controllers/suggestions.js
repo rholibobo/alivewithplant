@@ -1,5 +1,5 @@
 const suggestions = function(req, res) {
-    res.render("suggestions")
+    res.render("suggestions", {pagename: ""})
 } 
 
 module.exports = suggestions;

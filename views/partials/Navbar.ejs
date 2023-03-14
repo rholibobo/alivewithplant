@@ -20,32 +20,24 @@
 
             <div class="nav-links">
                 <div class="nav-quick">
-
-                    <a href="/" <% if(pagename==="home" ) {%>
+                    <a href="/" <% if(pagename==="home" ){%> 
                         class=" active"
                         <%} else {%>
                             class="nav-btn"
                             <%}%>>HOME
                     </a>
-                    <div class="link-btn">
-
-                    </div>
                     <a href="/about-us" <% if(pagename==="about" ) {%>
                         class=" active"
                         <%} else {%>
                             class="nav-btn"
-                            <%}%>
-                                >ABOUT
+                            <%}%>>ABOUT    
                     </a>
-                    <div class="link-btn">
-
-                    </div>
+                    
                     <a href="/contact-us" <% if(pagename==="contact" ) {%>
                         class=" active"
                         <%} else {%>
                             class="nav-btn"
-                            <%}%>
-                                >CONTACT
+                            <%}%>>CONTACT            
                     </a>
                 </div>
                 <div class="nav-gallery">
@@ -56,7 +48,7 @@
 
                     <div class="link-btn">
                         <i class="fa-sharp fa-solid fa-pen"></i>
-                        <a href="#" class=" gallery">Suggestions</a>
+                        <a href="/suggestions" class=" gallery">Suggestions</a>
                     </div>
 
                 </div>
