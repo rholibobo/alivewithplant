@@ -274,6 +274,8 @@ li{
     border: 2px solid var(--primary-green);
     cursor: pointer;
     border-radius: 5px;
+    color: white;
+    font-weight: bold;
 }
 
 .video-display{
@@ -299,10 +301,14 @@ li{
     position:absolute;
     bottom: 0;
     left: 0;
+    color:white;
+    font-weight: bold;
 }
 .video-display .below p{
     font-weight: bold;
     font-size: 0.9rem;
+    
+    
 }
 .video-display .below .btnBelowVideo{
     padding: 0.5rem;
