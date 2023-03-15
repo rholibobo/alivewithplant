@@ -26,7 +26,7 @@ app.use(HomePage)
 app.use(ContactUs)
 app.use(AboutUs)
 app.use(Gallery)
-app.use(Suggestions)
+// app.use(Suggestions)
 
 app.listen(port, () => {
   console.log(`listening on ${port}`);
