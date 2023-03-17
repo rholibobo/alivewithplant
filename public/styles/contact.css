@@ -77,3 +77,12 @@
     border-radius: 50%;
     color: white;
 }
+
+@media screen and (max-width: 900px) {
+    .contact-div{
+       flex-direction: column; 
+    }
+    .contact, form{
+        width: 100%;
+    }
+}

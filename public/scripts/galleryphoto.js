@@ -32,7 +32,7 @@ for (
     box[i].classList.add("flip");
     boxText[i].style.display = "block";
     boxText2[i].style.display = "none";
-    button[i].innerText = "Click to view Recipee";
+    button[i].innerText = "View Recipee";
   });
 
 }

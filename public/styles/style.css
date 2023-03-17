@@ -54,6 +54,7 @@
 
 /* MAIN BODY */
 main {
+    position: relative;
     background-color:var(--primary-body) ;
     font-family: 'Open Sans', sans-serif;
 }
@@ -647,6 +648,7 @@ footer .footer-div .contact ul {
 footer .footer-div .contact ul a {
     color: grey;
     text-decoration: none;
+    border-bottom: 2px solid grey;
 }
 
 footer .footer-div .contact h3 {
