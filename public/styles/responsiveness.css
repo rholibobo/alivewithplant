@@ -1,0 +1,214 @@
+:root {
+    --primary-green: #62af2f;
+    --primary-orange: rgb(198, 153, 24);
+    --primary-red: rgb(211, 33, 37);
+    --primary-white: white;
+    --primary-black: black;
+    --primary-body: #f1f1ef;
+}
+/* MEDIA QUERIES */
+/* TABLETS & MOBILE FOR NAVBAR */
+@media screen and (max-width: 900px) {
+    /* NAVBAR SECTION */
+    .main{
+        width: 90%;
+    }
+    .nav-links .nav-quick,
+    .nav-links .nav-gallery {
+        display: none;
+    }
+
+    nav {
+        align-items: center;
+        height: 8vh;
+    }
+    nav img{
+        width: 12%;
+    }
+    nav .nav-links {
+        justify-content: flex-end;
+    }
+
+    .hamburger,.ham-links {
+        display: block;
+    }
+    
+
+    /* Hamburger Menu */
+    .hamburger {
+        cursor: pointer;
+        width: 30px;
+        height: 30px;
+        transition: all 0.25s;
+        position: absolute;
+        right: 0;
+    }
+
+    .hamburger:focus {
+        outline: none;
+    }
+
+    .hamburger-top,
+    .hamburger-middle,
+    .hamburger-bottom {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 30px;
+        height: 2px;
+        background-color: #000;
+        transform: rotate(0);
+        transition: all 0.5s;
+    }
+
+    .hamburger-middle {
+        transform: translateY(7px);
+    }
+
+    .hamburger-bottom {
+        transform: translateY(14px);
+    }
+
+    .open {
+        transform: rotate(90deg);
+        transform: translateY(0px);
+    }
+
+    .open .hamburger-top {
+        transform: rotate(45deg) translateY(6px) translate(6px);
+    }
+
+    .open .hamburger-middle {
+        display: none;
+    }
+
+    .open .hamburger-bottom {
+        transform: rotate(-45deg) translateY(6px) translate(-6px);
+    }
+
+    .sidebar {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        height: 40vh;
+        /* align-items: center; */
+        justify-content: space-evenly;
+        /* align-self: flex-end; */
+        background-color: rgba(255, 255, 255, 0.9);
+        padding: 1rem 1.5rem 1.5rem 1rem;
+        margin-top: 2.5rem;
+        font-weight: bold;
+        font-size: 1.2rem;
+        left: 0;
+        right: 0;
+        box-shadow: 9px 10px 23px -4px rgba(0, 0, 0, 0.75);
+        z-index: 40;
+
+    }
+
+    .flex {
+        display: flex;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    /* SECTION 1 */
+    .section-home .bgImg-text{
+        width: 80%;
+    }
+
+    /* SECTION2 */
+    .section2{
+        flex-direction: column;
+    }
+    .section2-1,.section2-2{
+        width: 100%;
+    }
+    .section2-1img img,.section2-2img img{
+        width: 50%;
+    }
+    .section2-1img img{
+        right: -6%;
+        top: 0;
+    }
+    .section2-2img img{
+        right: -10%;
+        top: 0;
+    }
+
+
+    /* SECTION3 */
+    .section3{
+        height: 50vh;
+    }
+    .section3 .one img{
+        top: -10%;
+    }
+    .section3 .two img{
+        top: -8%;
+    }
+    .section3 .section3-text{
+        width: 60%;
+    }
+    .section3 .img img{
+        width: 50%;
+        top: 58%;
+        left: 29%;
+    }
+
+    /* SECTION4 */
+    .section4 .section4-top{
+        width: 50%;
+    }
+    /* .section4 .section4-imgs{
+        
+    } */
+    .section4 .section4-imgs :last-child{
+        display: none;
+    }
+    .section4 .section4-imgs .slides{
+        width: 48%;
+    }
+    .section4 .section4-imgs .slides .img-slide{
+        height: 30vh;
+    }
+
+    /* SECTION5 */
+    .section5{
+        height: 70vh;
+    }
+    .section5 .section5-main{
+        width: 90%;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+    .section5 .section5-main .sec5-img img{
+        width: 80%;
+    }
+    .section5 .section5-main .sec5-text{
+        width: 80%;
+    }
+
+    /* FOOTER */
+    footer{
+        height: auto;
+        padding-bottom: 3rem 0;
+    }
+    footer .footer-div{
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-logo,footer .footer-div #q-links,footer .footer-div .contact{
+        width: 70%;
+        padding-bottom:2rem;
+    }
+    .footer-down{
+        width: 60%;
+        white-space: nowrap;
+    }
+    
+}
