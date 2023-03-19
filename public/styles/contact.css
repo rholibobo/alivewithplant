@@ -86,3 +86,17 @@
         width: 100%;
     }
 }
+@media screen and (max-width: 900px) {
+    .contact-div{
+       flex-direction: column; 
+    }
+    .contact, form{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 500px) {
+    .contact-div{
+        width: 95%;
+    }
+    
+}

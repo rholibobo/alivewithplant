@@ -15,23 +15,27 @@ i++
 ){
     photosBtn.addEventListener("click", ()=>{
         videosBtn.classList.remove("done");
-        // photosBtn.classList.add("do");
-        photosBtn.style.animation = "shift 1s ease-in-out";
-        pix.classList.add("flip")
-        pix.style.display = 'block';
+        photosBtn.classList.add("do");
+        photosBtn.style.backgroundColor = "white"
+        photosBtn.style.border = "1px solid white"
+        photosBtn.style.color = "#62af2f"
+        wholeImg.classList.add("flip")
+        wholeImg.style.display = 'block';
         videosContainer[i].style.display = "none";
-        vids.classList.remove("flip");
+        wholeVid.classList.remove("flip");
         photoIcon.style.color = "#62af2f"
         videoIcon.style.color = "white"
     })
+
     videosBtn.addEventListener("click", ()=>{
         videosBtn.classList.add("done");
-        // photosBtn.classList.remove("do");
-        photosBtn.style.animation = "none"
-        pix.style.display = "none";
+        photosBtn.style.backgroundColor = "#62af2f"
+        photosBtn.style.border = "1px solid #62af2f"
+        photosBtn.style.color = "white"
+        wholeImg.style.display = "none";
         videosContainer[i].style.display = "flex";
-        vids.classList.add("flip");
+        wholeVid.classList.add("flip");
         videoIcon.style.color = "#62af2f"
-        photoIcon.style.color = "#62af2f"
+        photoIcon.style.color = "white"
     })
 }

@@ -362,7 +362,7 @@ li{
     background-color: var(--primary-white);
     color: var(--primary-green);
     border: 2px solid var(--primary-white);
-    animation: shift 1s ease-in-out;
+    /* animation: shift 1s ease-in-out; */
 }
 #btn-above .house #photos-btn i{
     color: var(--primary-green);
@@ -380,27 +380,25 @@ li{
 #btn-above .house #photos-btn.do{
     background-color: var(--primary-white);
     color: var(--primary-green);
-    border: 2px solid white;
     animation: mover 1s ease-in-out;
+    
+    border: 2px solid var(--primary-green);
 }
 @keyframes mover {
     100%{
-        background-color: white;
-        color: var(--primary-green);
         transform: scale(1.1);
-        border: 2px solid white;
     }
 }
 #btn-above .house #videos-btn.done{
     background-color: white;
     color: var(--primary-green);
+    border: 2px solid white;
     animation: move 1s ease-in-out ;
 }
 @keyframes move {
     100%{
         background-color: white;
         color: var(--primary-green);
-        border: 2px solid white;
         transform: scale(1.1);
     }
 }
@@ -474,4 +472,43 @@ li{
         height: 35vh;
     }
     
+}
+
+/* MOBILE VIEW */
+@media screen and (max-width: 500px){
+    /* Photo */
+    .house{
+        width: 60%;
+    }
+    .gallery-container{
+        flex-direction: column;
+    }
+    .container{
+        width: 95%;
+        margin: 0 auto;
+    }
+    .main-display .img-display{
+        height: 50vh;
+    }
+    .recipee-display{
+        height: 55vh;
+    }
+    /* Video */
+    .video-gallery{
+        flex-direction: column;
+        
+    }
+    .video-div{
+        width: 95%;
+        padding: 1rem 0;
+    }
+    .view-video{
+        padding: 0.8rem;
+    }
+    .video-gallery .view-video .videos{
+        height: 50vh;
+    }
+    .video-display{
+        height: 55vh;
+    }
 }
