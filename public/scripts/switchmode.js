@@ -15,7 +15,7 @@ i++
 ){
     photosBtn.addEventListener("click", ()=>{
         videosBtn.classList.remove("done");
-        photosBtn.classList.add("do");
+        // photosBtn.classList.add("do");
         photosBtn.style.animation = "shift 1s ease-in-out";
         pix.classList.add("flip")
         pix.style.display = 'block';
@@ -26,12 +26,12 @@ i++
     })
     videosBtn.addEventListener("click", ()=>{
         videosBtn.classList.add("done");
-        photosBtn.classList.remove("do");
+        // photosBtn.classList.remove("do");
         photosBtn.style.animation = "none"
         pix.style.display = "none";
         videosContainer[i].style.display = "flex";
         vids.classList.add("flip");
         videoIcon.style.color = "#62af2f"
-        photoIcon.style.color = "white"
+        photoIcon.style.color = "#62af2f"
     })
 }

@@ -6,13 +6,16 @@
     --primary-black: black;
     --primary-body: #f1f1ef;
 }
+
 /* MEDIA QUERIES */
 /* TABLETS & MOBILE FOR NAVBAR */
 @media screen and (max-width: 900px) {
+
     /* NAVBAR SECTION */
-    .main{
+    .main {
         width: 90%;
     }
+
     .nav-links .nav-quick,
     .nav-links .nav-gallery {
         display: none;
@@ -22,17 +25,20 @@
         align-items: center;
         height: 8vh;
     }
-    nav img{
+
+    nav img {
         width: 12%;
     }
+
     nav .nav-links {
         justify-content: flex-end;
     }
 
-    .hamburger,.ham-links {
+    .hamburger,
+    .ham-links {
         display: block;
     }
-    
+
 
     /* Hamburger Menu */
     .hamburger {
@@ -42,6 +48,7 @@
         transition: all 0.25s;
         position: absolute;
         right: 0;
+        margin-top: 1rem;
     }
 
     .hamburger:focus {
@@ -116,99 +123,300 @@
     }
 
     /* SECTION 1 */
-    .section-home .bgImg-text{
+     nav {
+        align-items: center;
+        height: 8vh;
+    }
+
+    nav img {
+        width: 15%;
+    }
+    .section-home .bgImg-text {
         width: 80%;
     }
 
     /* SECTION2 */
-    .section2{
+    .section2 {
         flex-direction: column;
     }
-    .section2-1,.section2-2{
+
+    .section2-1,
+    .section2-2 {
         width: 100%;
     }
-    .section2-1img img,.section2-2img img{
+
+    .section2-1img img,
+    .section2-2img img {
         width: 50%;
     }
-    .section2-1img img{
+
+    .section2-1img img {
         right: -6%;
         top: 0;
     }
-    .section2-2img img{
+
+    .section2-2img img {
         right: -10%;
         top: 0;
     }
 
 
     /* SECTION3 */
-    .section3{
+    .section3 {
         height: 50vh;
     }
-    .section3 .one img{
+
+    .section3 .one img {
         top: -10%;
     }
-    .section3 .two img{
+
+    .section3 .two img {
         top: -8%;
     }
-    .section3 .section3-text{
+
+    .section3 .section3-text {
         width: 60%;
     }
-    .section3 .img img{
+
+    .section3 .img img {
         width: 50%;
         top: 58%;
         left: 29%;
     }
 
     /* SECTION4 */
-    .section4 .section4-top{
+    .section4 .section4-top {
         width: 50%;
     }
+
     /* .section4 .section4-imgs{
         
     } */
-    .section4 .section4-imgs :last-child{
+    .section4 .section4-imgs :last-child {
         display: none;
     }
-    .section4 .section4-imgs .slides{
+
+    .section4 .section4-imgs .slides {
         width: 48%;
     }
-    .section4 .section4-imgs .slides .img-slide{
+
+    .section4 .section4-imgs .slides .img-slide {
         height: 30vh;
     }
 
     /* SECTION5 */
-    .section5{
+    .section5 {
         height: 70vh;
     }
-    .section5 .section5-main{
+
+    .section5 .section5-main {
         width: 90%;
         flex-direction: column;
         justify-content: center;
-        
+
     }
-    .section5 .section5-main .sec5-img img{
+
+    .section5 .section5-main .sec5-img img {
         width: 80%;
     }
-    .section5 .section5-main .sec5-text{
+
+    .section5 .section5-main .sec5-text {
         width: 80%;
     }
 
     /* FOOTER */
-    footer{
+    footer {
         height: auto;
         padding-bottom: 3rem 0;
     }
-    footer .footer-div{
+
+    footer .footer-div {
         flex-direction: column;
         align-items: center;
     }
-    .footer-logo,footer .footer-div #q-links,footer .footer-div .contact{
+
+    .footer-logo,
+    footer .footer-div #q-links,
+    footer .footer-div .contact {
         width: 80%;
-        padding-bottom:2rem;
+        padding-bottom: 2rem;
     }
-    .footer-down{
+
+    .footer-down {
         width: 60%;
         white-space: nowrap;
     }
-    
+
+}
+
+/* MOBILE VIEW */
+@media screen and (max-width: 500px) {
+
+    .main {
+        width: 95%;
+    }
+
+    /* SECTION 1 */
+    .section-home .bgImg-text {
+        width: 95%;
+        background-color: rgba(203, 197, 197, 0.3);
+        box-shadow: 3px 4px 9px 1px rgba(0, 0, 0, 0.28);
+    }
+
+    .section-home .bgImg-text h1 {
+        font-size: 2.5rem;
+
+    }
+
+    /* SECTION2 */
+    .section2-1 .section2-1text div {
+        width: 60%;
+    }
+
+    .section2-1img img {
+        right: -6%;
+        top: 50%;
+    }
+
+    .section2-2img img {
+        right: -10%;
+        top: 50%;
+    }
+
+    /* SECTION3 */
+    .section3 {
+        height: 50vh;
+    }
+
+    .section3 .one img {
+        width: 15%;
+        top: -10%;
+    }
+
+    .section3 .two img {
+        width: 25%;
+        top: -8%;
+    }
+
+    .section3 .section3-text {
+        width: 95%;
+    }
+
+    .section3 .img img {
+        width: 50%;
+        top: 75%;
+        left: 27%;
+    }
+
+    /* SECTION4 */
+    .section4 .section4-top {
+        width: 70%;
+    }
+
+    .section4 .section4-imgs {
+        flex-direction: column;
+    }
+
+    .section4 .section4-imgs .slides {
+        width: 95%;
+    }
+
+    .section4 .section4-imgs .slides .img-slide {
+        height: 50vh;
+    }
+
+    .section4 .btn-div .btn {
+        width: 95%;
+    }
+
+    /* SECTION5 */
+    .section5 .section5-main {
+        width: 95%;
+
+    }
+
+    .section5 .section5-main .sec5-text {
+        width: 95%;
+    }
+
+    /* FOOTER */
+    .footer-logo,
+    footer .footer-div #q-links,
+    footer .footer-div .contact {
+        width: 95%;
+
+    }
+
+    .footer-down {
+        width: 100%;
+
+    }
+
+}
+
+@media screen and (max-width: 361px) {
+    body{
+        overflow: hidden;
+    }
+    header{
+        width: 100%;
+    }
+    main{
+        width: 100%;
+    }
+    .main {
+        width: 95%;
+    }
+
+    .section-home {
+        width: 100%;
+        height: 100vh;
+
+    }
+
+    .section-home .bgImg-text {
+        width: 95%;
+
+    }
+
+    .section-home .bgImg-text h1 {
+        font-size: 2.3rem;
+    }
+
+    .section-home .bgImg-text h1 span {
+        font-size: 1.8rem;
+    }
+
+    /* SECTION3 */
+    .section3 {
+        height: 60vh;
+    }
+    .section3 .one img {
+        width: 15%;
+        top: -8%;
+    }
+
+    .section3 .two img {
+        width: 25%;
+        top: -8%;
+    }
+
+    .section3 .section3-text {
+        width: 95%;
+    }
+
+    .section3 .img img {
+        width: 50%;
+        top: 80%;
+        left: 27%;
+    }
+    /* SECTION4 */
+    .section4 .section4-top {
+        width: 80%;
+    }
+    /* SECTION5 */
+    .section5 {
+        height: 80vh;
+    }
+
 }
