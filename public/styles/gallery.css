@@ -442,6 +442,7 @@ li{
         flex-direction: row;
         justify-content: center;
         align-items: center;
+        padding: 1rem 0;
     }
     .house{
         width: 50%;
@@ -450,10 +451,11 @@ li{
         justify-content: space-between;
         flex-direction: row;
         
+        
     }
     #btn-above .house #photos-btn,#videos-btn{
-        width: 70px;
-        height: 70px;
+        width: 60px;
+        height: 60px;
     }
     .main-display .img-display{
         height: 30vh;
@@ -475,7 +477,7 @@ li{
 }
 
 /* MOBILE VIEW */
-@media screen and (max-width: 500px){
+@media screen and (max-width: 600px){
     /* Photo */
     .house{
         width: 60%;

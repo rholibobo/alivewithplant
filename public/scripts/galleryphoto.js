@@ -29,7 +29,7 @@ for (
     button[i].innerText = "Back";
   }
   buttonBelow[i].addEventListener("click", () => {
-    box[i].classList.add("flip");
+    box[i].classList.remove("flip");
     boxText[i].style.display = "block";
     boxText2[i].style.display = "none";
     button[i].innerText = "View Recipee";

@@ -250,8 +250,10 @@
 }
 
 /* MOBILE VIEW */
-@media screen and (max-width: 500px) {
-
+@media screen and (max-width: 600px) {
+    main{
+        overflow: hidden;
+    }
     .main {
         width: 95%;
     }
@@ -356,13 +358,15 @@
 
 @media screen and (max-width: 361px) {
     body{
-        overflow: hidden;
+        width: fit-content;
+        
     }
     header{
         width: 100%;
     }
     main{
         width: 100%;
+        overflow: hidden;
     }
     .main {
         width: 95%;
