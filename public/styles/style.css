@@ -54,6 +54,7 @@
 
 /* MAIN BODY */
 main {
+    width: 100%;
     position: relative;
     background-color:var(--primary-body) ;
     font-family: 'Open Sans', sans-serif;

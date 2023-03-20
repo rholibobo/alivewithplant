@@ -479,6 +479,7 @@ li{
 /* MOBILE VIEW */
 @media screen and (max-width: 600px){
     /* Photo */
+    
     .house{
         width: 60%;
     }
