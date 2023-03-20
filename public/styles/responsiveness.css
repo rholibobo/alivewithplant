@@ -109,7 +109,7 @@
         left: 0;
         right: 0;
         box-shadow: 9px 10px 23px -4px rgba(0, 0, 0, 0.75);
-        z-index: 40;
+        z-index: 100;
 
     }
 
