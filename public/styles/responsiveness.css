@@ -252,7 +252,7 @@
 /* MOBILE VIEW */
 @media screen and (max-width: 600px) {
     main{
-        overflow: hidden;
+        overflow-x: hidden;
     }
     .main {
         width: 95%;
@@ -366,7 +366,7 @@
     }
     main{
         width: 100%;
-        overflow: hidden;
+        overflow-x: hidden;
     }
     .main {
         width: 95%;
