@@ -5,6 +5,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 :root {
@@ -20,14 +21,6 @@
 }
 
 /* WEBSITE LOADER */
-.inline {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    
-}
 #spinner {
     background-color: rgba(179, 192, 33, 0.4);
     width: 100%;
@@ -37,6 +30,8 @@
     align-items: center;
     animation: spin 20s linear infinite;
     color: #62af2f;
+    position: fixed;
+    z-index: 1;
     
 }
 
@@ -54,7 +49,7 @@
 
 /* MAIN BODY */
 main {
-    width: 100%;
+    /* width: 100%; */
     position: relative;
     background-color:var(--primary-body) ;
     font-family: 'Open Sans', sans-serif;
@@ -238,6 +233,7 @@ nav a {
     font-weight: bold;
     margin-top: 10px;
     text-align: center;
+    cursor: pointer;
 }
 
 /* HEADER MEDIA QUERIES SECTION1 */

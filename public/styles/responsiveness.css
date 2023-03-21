@@ -244,15 +244,20 @@
 
     .footer-down {
         width: 60%;
-        white-space: nowrap;
+        
     }
 
 }
 
 /* MOBILE VIEW */
 @media screen and (max-width: 600px) {
+    body{
+        max-width: fit-content;
+    }
     main{
-        overflow-x: hidden;
+        width: 100%;
+        /* margin: 0 auto; */
+        overflow: hidden;
     }
     .main {
         width: 95%; 
@@ -356,17 +361,12 @@
 
 }
 
-@media screen and (max-width: 361px) {
-    body{
-        width: fit-content;
-        
-    }
-    header{
-        width: 100%;
-    }
+@media screen and (max-width: 400px) {
+    
     main{
-        width: 100%;
-        overflow-x: hidden;
+        width: 100vw;
+        /* margin: 0 auto; */
+        overflow: hidden;
     }
     .main {
         width: 95%;
@@ -421,6 +421,12 @@
     /* SECTION5 */
     .section5 {
         height: 80vh;
+    }
+
+    /* FOOTER */
+    .footer-down{
+        display: flex;
+        justify-content: space-between;
     }
 
 }
