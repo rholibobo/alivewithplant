@@ -34,6 +34,12 @@
         justify-content: flex-end;
     }
 
+    .ham-div{
+        width:100%;
+        display: flex;
+        /* background-color: red; */
+        justify-content: space-between;
+    }
     .hamburger,
     .ham-links {
         display: block;
@@ -48,7 +54,7 @@
         transition: all 0.25s;
         position: absolute;
         right: 0;
-        margin-top: 1rem;
+        margin-top: 0.85rem;
     }
 
     .hamburger:focus {

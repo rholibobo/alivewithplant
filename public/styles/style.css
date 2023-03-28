@@ -151,7 +151,7 @@ nav a {
 }
 
 .hamburger,
-.ham-links,
+.ham-links,.ham-div,
 .sidebar {
     display: none;
 }
