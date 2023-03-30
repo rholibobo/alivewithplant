@@ -1,5 +1,4 @@
 const express = require("express");
-const functions = require('firebase-functions');
 const app = express();
 const port = process.env.PORT || 3500;
 const HomePage = require("./routes/home")
@@ -18,7 +17,6 @@ liveReloadServer.server.once("connection", () => {
   }, 100);
 });
 
-app.set('views', './views');
 app.set("view engine", "ejs");
 app.use(express.static("public"));
 app.use("/public/imgs", express.static("./public/imgs"));
@@ -34,4 +32,4 @@ app.listen(port, () => {
   console.log(`listening on ${port}`);
 });
 
-exports.app = functions.https.onRequest(app);
+
