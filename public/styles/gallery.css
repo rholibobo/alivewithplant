@@ -504,6 +504,7 @@ li{
     .video-div{
         width: 95%;
         padding: 1rem 0;
+        margin: 0 auto;
     }
     .view-video{
         padding: 0.8rem;
