@@ -7,15 +7,15 @@ const AboutUs = require("./routes/about")
 const Gallery = require("./routes/gallery")
 const Suggestions = require("./routes/suggestions")
 
-const livereload = require("livereload");
-const connectLiveReload = require("connect-livereload");
+// const livereload = require("livereload");
+// const connectLiveReload = require("connect-livereload");
 
-const liveReloadServer = livereload.createServer();
-liveReloadServer.server.once("connection", () => {
-  setTimeout(() => {
-    liveReloadServer.refresh("/");
-  }, 100);
-});
+// const liveReloadServer = livereload.createServer();
+// liveReloadServer.server.once("connection", () => {
+//   setTimeout(() => {
+//     liveReloadServer.refresh("/");
+//   }, 100);
+// });
 
 app.set("view engine", "ejs");
 app.use(express.static("public"));
