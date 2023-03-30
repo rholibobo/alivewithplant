@@ -20,7 +20,7 @@ const Suggestions = require("./routes/suggestions")
 app.set("view engine", "ejs");
 app.use(express.static("public"));
 app.use("/public/imgs", express.static("./public/imgs"));
-app.use(connectLiveReload());
+// app.use(connectLiveReload());
 
 app.use(HomePage)
 app.use(ContactUs)
